@@ -1,0 +1,6 @@
+[
+  { "kind": "sand", "label": "河沙(石英砂)", "densityKgPerL": 1.6 },
+  { "kind": "gravel", "label": "砾石(陶粒砂)", "densityKgPerL": 1.5 },
+  { "kind": "soil", "label": "水草泥(国产)", "densityKgPerL": 1.05 },
+  { "kind": "ada", "label": "ADA 泥(亚马逊)", "densityKgPerL": 1.15 }
+]

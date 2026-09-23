@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --line: #d8dee4;
+  --muted: #6b7680;
+  --primary: #0e7c86;
+  --danger: #c0392b;
+  --warn-bg: #fff7e0;
+  --ok: #1e7d32;
+}
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+}
+body {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+  color: #22272e;
+  background: #f6f8fa;
+}
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  background: #0e7c86;
+  color: #fff;
+}
+.brand {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a {
+  color: #dff3f5;
+  text-decoration: none;
+  margin-right: 12px;
+}
+.topnav a:hover {
+  color: #fff;
+}
+.content {
+  padding: 16px;
+}
+.page-head,
+.editor-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+h1 {
+  font-size: 20px;
+}
+h3 {
+  margin: 14px 0 8px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tabs {
+  margin-bottom: 12px;
+}
+.tab {
+  padding: 4px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+.tab.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.btn {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.btn:hover {
+  border-color: var(--primary);
+}
+.btn.primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.btn.danger {
+  color: var(--danger);
+  border-color: #e4b6b0;
+}
+.btn.ghost {
+  border-color: transparent;
+  background: transparent;
+  color: var(--muted);
+}
+.btn.sm {
+  padding: 2px 8px;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+input,
+select {
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 13px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+label.chk {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #22272e;
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 12px;
+}
+.ok {
+  color: var(--ok);
+}
+.bad {
+  color: var(--danger);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+.card-link {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+.cards2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.card2 {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+}
+.card2 h3 {
+  margin-top: 0;
+}
+.card2.over {
+  border-color: #e4b6b0;
+  background: #fff8f7;
+}
+.big {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+.result {
+  margin-top: 10px;
+  padding: 10px;
+  background: #eef7f8;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.warnbox {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: var(--warn-bg);
+  border: 1px solid #ecd9a0;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.okbox {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: #ecf7ee;
+  border: 1px solid #bfe3c6;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.issue {
+  padding: 6px 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.issue-conflict {
+  background: #fdeceb;
+  border: 1px solid #f0b9b3;
+}
+.issue-warning {
+  background: var(--warn-bg);
+  border: 1px solid #ecd9a0;
+}
+.issue-info {
+  background: #eef3fb;
+  border: 1px solid #c6d5f0;
+}
+.empty {
+  padding: 40px;
+  text-align: center;
+  color: var(--muted);
+  background: #fff;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 13px;
+}
+.table th,
+.table td {
+  border: 1px solid var(--line);
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+.table th {
+  background: #f0f3f5;
+}
+.small-table {
+  font-size: 10px;
+}
+.tag {
+  display: inline-block;
+  background: #eef3f5;
+  border-radius: 10px;
+  padding: 1px 8px;
+  margin: 1px 2px;
+  font-size: 11px;
+  color: #46525c;
+}
+/* 编辑器 */
+.editor-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr 300px;
+  gap: 12px;
+  align-items: start;
+}
+@media (max-width: 1000px) {
+  .editor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.panel {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+}
+.panel h3 {
+  margin: 8px 0 6px;
+  font-size: 14px;
+}
+.lib-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.lib-item {
+  text-align: left;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  background: #fafcfd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.lib-item:hover {
+  border-color: var(--primary);
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+@media (max-width: 700px) {
+  .grid4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.span2 {
+  grid-column: span 2;
+}
+.canvas-frame {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px;
+  overflow: auto;
+}
+.canvas-toolbar {
+  margin-bottom: 8px;
+}
+.volbar {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 13px;
+}
+.grid-line {
+  stroke: #d9e6ec;
+  stroke-width: 1;
+}
+/* 打印 */
+@media print {
+  .no-print,
+  .topbar {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  .bom-page {
+    max-width: 100%;
+  }
+  .care-card {
+    break-inside: avoid;
+  }
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+}

@@ -1,0 +1,8 @@
+[
+  { "id": "h-rock-seiryu", "name": "青龙石", "kind": "hardscape", "defaultCm": 15, "displacement": 0.55, "note": "硬水石，会升 GH/KH，草缸慎用", "shape": "rock" },
+  { "id": "h-rock-lava", "name": "火山岩", "kind": "hardscape", "defaultCm": 12, "displacement": 0.35, "note": "多孔轻质，不硬水", "shape": "rock" },
+  { "id": "h-rock-slate", "name": "板岩片", "kind": "hardscape", "defaultCm": 20, "displacement": 0.4, "note": "可做岩组层叠", "shape": "rock" },
+  { "id": "h-wood-manzhicao", "name": "曼珠沉木", "kind": "hardscape", "defaultCm": 25, "displacement": 0.3, "note": "需沉水处理，绑莫斯效果好", "shape": "wood" },
+  { "id": "h-wood-banyan", "name": "榕树根沉木", "kind": "hardscape", "defaultCm": 30, "displacement": 0.28, "note": "枝条舒展，适合绑阴性草", "shape": "wood" },
+  { "id": "h-wood-branch", "name": "直枝木", "kind": "hardscape", "defaultCm": 35, "displacement": 0.25, "note": "骨架枝条", "shape": "wood" }
+]

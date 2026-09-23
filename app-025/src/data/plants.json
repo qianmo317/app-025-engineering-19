@@ -1,0 +1,14 @@
+[
+  { "id": "p-javafern", "name": "铁皇冠", "layer": "mid", "lightNeed": "low", "growth": "slow", "co2Need": false, "tempC": [18, 28], "pricePerPlant": 15, "note": "阴性草，绑沉木/石上，忌埋根" },
+  { "id": "p-anubias", "name": "小水榕", "layer": "front", "lightNeed": "low", "growth": "slow", "co2Need": false, "tempC": [20, 28], "pricePerPlant": 12, "note": "阴性草，绑石头或沉木" },
+  { "id": "p-crypt-wendtii", "name": "椒草(温蒂)", "layer": "front", "lightNeed": "low", "growth": "slow", "co2Need": false, "tempC": [22, 28], "pricePerPlant": 8, "note": "怕水质骤变，易溶叶" },
+  { "id": "p-vallisneria", "name": "苦草(水兰)", "layer": "back", "lightNeed": "low", "growth": "fast", "co2Need": false, "tempC": [15, 30], "pricePerPlant": 5, "note": "极易养，会走茎繁殖" },
+  { "id": "p-amazon-sword", "name": "皇冠草(亚马逊)", "layer": "back", "lightNeed": "mid", "growth": "mid", "co2Need": false, "tempC": [22, 28], "pricePerPlant": 18, "note": "大型背景草，需底肥" },
+  { "id": "p-hydrocotyle", "name": "天胡荽", "layer": "mid", "lightNeed": "mid", "growth": "mid", "co2Need": true, "tempC": [20, 27], "pricePerPlant": 10, "note": "中光以上颜色更好" },
+  { "id": "p-ludwigia", "name": "红宫廷", "layer": "back", "lightNeed": "high", "growth": "fast", "co2Need": true, "tempC": [20, 28], "pricePerPlant": 6, "note": "强光+CO2才发色，需常修剪" },
+  { "id": "p-rotala-green", "name": "绿宫廷", "layer": "back", "lightNeed": "high", "growth": "fast", "co2Need": true, "tempC": [20, 28], "pricePerPlant": 6, "note": "阳性草，弱光易徒长" },
+  { "id": "p-carpet-dwarf", "name": "迷你矮珍珠", "layer": "front", "lightNeed": "high", "growth": "mid", "co2Need": true, "tempC": [20, 26], "pricePerPlant": 2, "note": "前景草坪，强光+CO2必需" },
+  { "id": "p-moss-milan", "name": "莫斯(米兰)", "layer": "mid", "lightNeed": "low", "growth": "fast", "co2Need": false, "tempC": [18, 28], "pricePerPlant": 8, "note": "绑石/木，虾缸友好" },
+  { "id": "p-bacopa", "name": "假马齿苋", "layer": "mid", "lightNeed": "mid", "growth": "mid", "co2Need": false, "tempC": [20, 28], "pricePerPlant": 5, "note": "皮实中景草" },
+  { "id": "p-cabomba", "name": "金鱼藻(聚草)", "layer": "back", "lightNeed": "mid", "growth": "fast", "co2Need": false, "tempC": [18, 26], "pricePerPlant": 4, "note": "生长快，易断枝" }
+]
