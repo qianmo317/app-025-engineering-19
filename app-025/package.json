@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+    "check": "node scripts/check.mjs",
+    "pretest": "npm run check",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui=false run",
